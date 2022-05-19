@@ -10,9 +10,6 @@ import os
 template = "Directories"
 print(template)
 
-
-
-
 def createDirIfNotExist(dirName):
     isExist = os.path.exists(dirName)
     if not isExist:
@@ -38,6 +35,10 @@ def readFile(completeName):
     for line in lines:
         print(line)
     a_file.close()
+
+name = input("What is your name?")
+address = input("What is your address?")
+phone = input("What is your phone number?")
 
 
 directoryName = input("What directory do you want to save your file in?")
